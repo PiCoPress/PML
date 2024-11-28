@@ -1,3 +1,3 @@
 class cli:
-	def print(i):
-		print(i)
+	def print(d: dict):
+		print(d['p'])

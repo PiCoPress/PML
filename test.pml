@@ -1,12 +1,14 @@
-<test.pml>
+<src>
 	<import from="std.cli">
-		print
+	print
 	</import>
 	<func name="main" return="true">
 		<arg name="argv"/>
 		<body>
-			<print>Hello World!</print>
+			<print>Hello World! <argv/></print>
 			<return>0</return>
 		</body>
 	</func>
-</test.pml>
+	<main>qq</main>
+	<main>wa sans</main>
+</src>
