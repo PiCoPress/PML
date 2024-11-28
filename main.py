@@ -173,7 +173,7 @@ class PML:
 				case _:
 					DEBUG('execute', 'case other: %s' % v.name)
 					if is_sub:
-						key = self.get_stack_obj['scope'].get(v.name)
+						key = self.get_stack_obj()['scope'].get(v.name)
 						if key != None: 
 							# TODO
 							pass
@@ -189,7 +189,7 @@ class PML:
 						elif obj_type == 5:
 							DEBUG('execute', 'loading external code: %s' % v.name)
 							txt = self.argument_resolver(v, 
-									self.get_stack_obj['scope'])
+									self.get_stack_obj()['scope'])
 							obj['body']({
 								k: txt for k in obj['args']
 							})
